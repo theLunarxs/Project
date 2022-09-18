@@ -20,9 +20,8 @@ namespace Project
             {
                 SQLiteConnection.CreateFile("db_users.sqlite3");
                 OpenConnection();
-                cmd = new SQLiteCommand("CREATE TABLE tbl_users( UserID INT(6) AUTO_INCREMENT PRIMARY KEY, Fname varchar(32), Lname varchar(32), Username varchar(32) NOT NULL, " +
-                    "Password varchar(32) NOT NULL, Role VARCHAR(32) NOT NULL, PayM int(12), HrsM int(12));" +
-                    "INSERT INTO tb_users(Username, Password, Role) ValUES('admin', 'admin', 'admin');", con);
+                cmd = new SQLiteCommand("CREATE TABLE tbl_users (UserID INT AUTO_INCREMENT PRIMARY KEY, Fname varchar(32),Lname varchar(32),Username varchar(32) NOT NULL,Password varchar(32) NOT NULL,Role VARCHAR(32) NOT NULL,PayM int(12),HrsM int(12));"
+                    + "INSERT INTO tbl_users (Username, Password, Role) ValUES('admin', 'admin', 'admin');", con);
                 cmd.ExecuteNonQuery();
                 CloseConnection();
 
@@ -34,7 +33,7 @@ namespace Project
         public void InsertData(string Fname, string Lname, string Username, string Password, string Role="user", int PayM=0, int HrsM = 0, string tbl_name ="tbl_users")
         {
             OpenConnection();
-            cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}';");
+            cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}';", con);
             SQLiteDataReader reader = cmd.ExecuteReader();
             if(!reader.Read())
             {
@@ -47,6 +46,7 @@ namespace Project
                 cmd.Parameters.AddWithValue("@PayM", PayM);
                 cmd.Parameters.AddWithValue("@HrsM", HrsM);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Register Successfull", "You may now Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

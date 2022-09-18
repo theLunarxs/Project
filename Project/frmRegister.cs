@@ -60,7 +60,7 @@ namespace Project
                 db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text);
                 
 
-                MessageBox.Show("Register Successfull", "You may now Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
 
                 txtUsername.Text = "";
                 txtPassword.Text = "";
