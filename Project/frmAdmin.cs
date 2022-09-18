@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Nexus
+namespace Project
 {
     public partial class frmAdmin : Form
     {
@@ -22,8 +22,7 @@ namespace Nexus
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            ImageList imageList = new ImageList();
-            imageList.ImageSize = new Size(30, 30);
+            
         }
     }
 }

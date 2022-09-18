@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Nexus
+namespace Project
 {
     public partial class frmRegister : Form
     {

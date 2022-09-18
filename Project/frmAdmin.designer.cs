@@ -1,4 +1,4 @@
-﻿namespace Nexus
+﻿namespace Project
 {
     partial class frmAdmin
     {
