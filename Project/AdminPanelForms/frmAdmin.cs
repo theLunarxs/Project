@@ -30,5 +30,10 @@ namespace Project
             new frmLogin().Show();
             this.Close();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

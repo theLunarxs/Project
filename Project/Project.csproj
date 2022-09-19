@@ -65,11 +65,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database.cs" />
-    <Compile Include="frmAdmin.cs">
+    <Compile Include="AdminPanelForms\frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAdmin.designer.cs">
+    <Compile Include="AdminPanelForms\frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="AdminPanelForms\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanelForms\frmAdmin.designer.cs">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
@@ -86,8 +92,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAdmin.resx">
+    <EmbeddedResource Include="AdminPanelForms\frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanelForms\frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
