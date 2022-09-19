@@ -21,24 +21,24 @@ namespace Project.AdminPanelForms
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            if(!(txtUsername.Text == "" || txtPassword.Text == "" || txtFname.Text =="" || txtLname.Text == ""))
+            if(!(txtUsername.Text == "" || txtPassword.Text == "" || txtFname.Text =="" || txtLname.Text == "" || cboxRole.SelectedItem.ToString() == ""))
             {
                 if(!(txtHrsM.Text == "" && txtPayM.Text == ""))
                 {
                     if (!(txttblname.Text == ""))
                     {
-                        db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text, HrsM: int.Parse(txtHrsM.Text), 
+                        db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text,Role:cboxRole.ToString() ,HrsM: int.Parse(txtHrsM.Text), 
                           PayM: int.Parse(txtPayM.Text), tbl_name:txttblname.Text);
                     }
                     else
                     {
-                        db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text, HrsM:int.Parse(txtHrsM.Text), PayM: int.Parse(txtPayM.Text));
+                        db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text, Role: cboxRole.ToString(), HrsM:int.Parse(txtHrsM.Text), PayM: int.Parse(txtPayM.Text));
                     }
                     
                 }
                 else
                 {
-                    db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text);
+                    db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text, Role: cboxRole.ToString());
                 }
                 
                 

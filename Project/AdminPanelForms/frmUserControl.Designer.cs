@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAddUser = new System.Windows.Forms.Button();
-            this.cmboxRole = new System.Windows.Forms.ComboBox();
+            this.cboxRole = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
             this.panel1.Controls.Add(this.btnAddUser);
-            this.panel1.Controls.Add(this.cmboxRole);
+            this.panel1.Controls.Add(this.cboxRole);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -102,23 +102,23 @@
             this.btnAddUser.Location = new System.Drawing.Point(115, 318);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(153, 36);
-            this.btnAddUser.TabIndex = 9;
+            this.btnAddUser.TabIndex = 8;
             this.btnAddUser.Text = "Add User";
             this.btnAddUser.UseVisualStyleBackColor = false;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
-            // cmboxRole
+            // cboxRole
             // 
-            this.cmboxRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmboxRole.Font = new System.Drawing.Font("Yu Gothic UI", 8F);
-            this.cmboxRole.FormattingEnabled = true;
-            this.cmboxRole.Items.AddRange(new object[] {
+            this.cboxRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxRole.Font = new System.Drawing.Font("Yu Gothic UI", 8F);
+            this.cboxRole.FormattingEnabled = true;
+            this.cboxRole.Items.AddRange(new object[] {
             "admin",
             "user"});
-            this.cmboxRole.Location = new System.Drawing.Point(78, 207);
-            this.cmboxRole.Name = "cmboxRole";
-            this.cmboxRole.Size = new System.Drawing.Size(100, 21);
-            this.cmboxRole.TabIndex = 8;
+            this.cboxRole.Location = new System.Drawing.Point(78, 207);
+            this.cboxRole.Name = "cboxRole";
+            this.cboxRole.Size = new System.Drawing.Size(100, 21);
+            this.cboxRole.TabIndex = 4;
             // 
             // label2
             // 
@@ -222,7 +222,7 @@
             this.txtHrsM.Location = new System.Drawing.Point(257, 211);
             this.txtHrsM.Name = "txtHrsM";
             this.txtHrsM.Size = new System.Drawing.Size(100, 22);
-            this.txtHrsM.TabIndex = 6;
+            this.txtHrsM.TabIndex = 5;
             // 
             // txttblname
             // 
@@ -230,7 +230,7 @@
             this.txttblname.Location = new System.Drawing.Point(257, 260);
             this.txttblname.Name = "txttblname";
             this.txttblname.Size = new System.Drawing.Size(100, 22);
-            this.txttblname.TabIndex = 5;
+            this.txttblname.TabIndex = 7;
             // 
             // txtLname
             // 
@@ -238,7 +238,7 @@
             this.txtLname.Location = new System.Drawing.Point(257, 99);
             this.txtLname.Name = "txtLname";
             this.txtLname.Size = new System.Drawing.Size(100, 22);
-            this.txtLname.TabIndex = 4;
+            this.txtLname.TabIndex = 1;
             // 
             // txtPassword
             // 
@@ -246,7 +246,7 @@
             this.txtPassword.Location = new System.Drawing.Point(257, 153);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 22);
-            this.txtPassword.TabIndex = 4;
+            this.txtPassword.TabIndex = 3;
             // 
             // txtUsername
             // 
@@ -254,7 +254,7 @@
             this.txtUsername.Location = new System.Drawing.Point(78, 153);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 22);
-            this.txtUsername.TabIndex = 3;
+            this.txtUsername.TabIndex = 2;
             // 
             // txtFname
             // 
@@ -262,7 +262,7 @@
             this.txtFname.Location = new System.Drawing.Point(78, 102);
             this.txtFname.Name = "txtFname";
             this.txtFname.Size = new System.Drawing.Size(100, 22);
-            this.txtFname.TabIndex = 1;
+            this.txtFname.TabIndex = 0;
             // 
             // lblAdduser
             // 
@@ -281,7 +281,7 @@
             this.txtUserTEdit.Location = new System.Drawing.Point(95, 62);
             this.txtUserTEdit.Name = "txtUserTEdit";
             this.txtUserTEdit.Size = new System.Drawing.Size(97, 22);
-            this.txtUserTEdit.TabIndex = 2;
+            this.txtUserTEdit.TabIndex = 11;
             // 
             // panel2
             // 
@@ -305,7 +305,7 @@
             this.btnDelUser.Location = new System.Drawing.Point(84, 145);
             this.btnDelUser.Name = "btnDelUser";
             this.btnDelUser.Size = new System.Drawing.Size(153, 30);
-            this.btnDelUser.TabIndex = 9;
+            this.btnDelUser.TabIndex = 10;
             this.btnDelUser.Text = "Find And Remove User";
             this.btnDelUser.UseVisualStyleBackColor = false;
             // 
@@ -338,7 +338,7 @@
             this.txtInfo.Location = new System.Drawing.Point(33, 100);
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(253, 22);
-            this.txtInfo.TabIndex = 1;
+            this.txtInfo.TabIndex = 9;
             // 
             // panel3
             // 
@@ -366,7 +366,7 @@
             this.btnEditUser.Location = new System.Drawing.Point(84, 142);
             this.btnEditUser.Name = "btnEditUser";
             this.btnEditUser.Size = new System.Drawing.Size(153, 30);
-            this.btnEditUser.TabIndex = 9;
+            this.btnEditUser.TabIndex = 14;
             this.btnEditUser.Text = "Find And Edit User";
             this.btnEditUser.UseVisualStyleBackColor = false;
             // 
@@ -397,7 +397,7 @@
             this.cboxChoice.Location = new System.Drawing.Point(230, 61);
             this.cboxChoice.Name = "cboxChoice";
             this.cboxChoice.Size = new System.Drawing.Size(82, 21);
-            this.cboxChoice.TabIndex = 8;
+            this.cboxChoice.TabIndex = 12;
             // 
             // label12
             // 
@@ -438,7 +438,7 @@
             this.textBox1.Location = new System.Drawing.Point(131, 99);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(155, 22);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 13;
             // 
             // frmUserControl
             // 
@@ -475,7 +475,7 @@
         private System.Windows.Forms.TextBox txtUserTEdit;
         private System.Windows.Forms.TextBox txtFname;
         private System.Windows.Forms.Label lblAdduser;
-        private System.Windows.Forms.ComboBox cmboxRole;
+        private System.Windows.Forms.ComboBox cboxRole;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
