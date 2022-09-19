@@ -46,5 +46,15 @@ namespace Project
             this.pnlContent.Controls.Add(frmDashboard_Vrb);
             frmDashboard_Vrb.Show();
         }
+
+        private void btnUserControl_Click(object sender, EventArgs e)
+        {
+            lblPageInfo.Text = "User Control";
+            this.pnlContent.Controls.Clear();
+            frmUserControl frmUserControl_Vrb = new frmUserControl(){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmUserControl_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlContent.Controls.Add(frmUserControl_Vrb);
+            frmUserControl_Vrb.Show();
+        }
     }
 }
