@@ -35,11 +35,10 @@ namespace Project
         {
             if(!(txtUsername.Text == "" && txtPassword.Text == ""))
             {
-                if(db.Login(txtUsername.Text, txtPassword.Text).Read() == true)
+                if(db.Login(txtUsername.Text, txtPassword.Text))
                 {
                     new frmAdmin().Show();
                     this.Hide();
-                    db.CloseConnection();
                 }
             }
             else

@@ -54,14 +54,23 @@ namespace Project
             }
             CloseConnection();
         }
-        public SQLiteDataReader Login(string Username, string Password, string tbl_name = "tbl_users")
+        public bool Login(string Username, string Password, string tbl_name = "tbl_users")
         {
             OpenConnection();
             cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}' and Password = '{Password}';", con);
             SQLiteDataReader reader = cmd.ExecuteReader();
-            return reader;
-            
+            if (reader.Read())
+            {
+                CloseConnection();
+                return true;
+            }
+            else 
+            {
+                CloseConnection();
+                return false;
+            } 
         }
+
         public void RemoveUser(string Username, string tbl_name = "tbl_users")
         {
 
