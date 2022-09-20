@@ -11,8 +11,8 @@ namespace Project
 {
     public class Database
     {
-        public SQLiteConnection con;
-        public SQLiteCommand cmd;
+        private SQLiteConnection con;
+        private SQLiteCommand cmd;
         public Database()
         {
             con = new SQLiteConnection("Data Source = db_users.sqlite3");
@@ -61,11 +61,13 @@ namespace Project
             SQLiteDataReader reader = cmd.ExecuteReader();
             if (reader.Read())
             {
+                reader.Close();
                 CloseConnection();
                 return true;
             }
             else 
             {
+                reader.Close();
                 CloseConnection();
                 return false;
             } 

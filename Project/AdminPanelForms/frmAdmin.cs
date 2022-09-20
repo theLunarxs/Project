@@ -41,8 +41,7 @@ namespace Project
         {
             lblPageInfo.Text = "Dashboard";
             this.pnlContent.Controls.Clear();
-            frmDashboard frmDashboard_Vrb = new frmDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
+            frmDashboard frmDashboard_Vrb = new frmDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             this.pnlContent.Controls.Add(frmDashboard_Vrb);
             frmDashboard_Vrb.Show();
         }
@@ -51,8 +50,7 @@ namespace Project
         {
             lblPageInfo.Text = "User Control";
             this.pnlContent.Controls.Clear();
-            frmUserControl frmUserControl_Vrb = new frmUserControl(){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmUserControl_Vrb.FormBorderStyle = FormBorderStyle.None;
+            frmUserControl frmUserControl_Vrb = new frmUserControl(){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             this.pnlContent.Controls.Add(frmUserControl_Vrb);
             frmUserControl_Vrb.Show();
         }
