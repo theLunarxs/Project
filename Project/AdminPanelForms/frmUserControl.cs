@@ -17,8 +17,9 @@ namespace Project.AdminPanelForms
         {
             InitializeComponent();
             db = new Database();
+            cboxRole.SelectedItem = "user";
+            cboxChoice.SelectedItem = "Fname";
         }
-
         private void btnAddUser_Click(object sender, EventArgs e)
         {
 
@@ -45,6 +46,17 @@ namespace Project.AdminPanelForms
                 txtPassword.Text = "";
                 txtLname.Text = "";
                 txtFname.Text = "";            
+        }
+        private void btnDelUser_Click(object sender, EventArgs e)
+        {
+            db.RemoveUser(txtDelUser.Text);
+            txtDelUser.Text = "";
+        }
+
+        private void btnEditUser_Click(object sender, EventArgs e)
+        {
+            db.EditUser(txtUserTEdit.Text, cboxChoice.SelectedItem.ToString(), txtNewValue.Text);
+            txtNewValue.Text = "";
         }
     }
 }

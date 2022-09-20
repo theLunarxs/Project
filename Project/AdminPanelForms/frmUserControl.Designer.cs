@@ -52,7 +52,7 @@
             this.btnDelUser = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
-            this.txtInfo = new System.Windows.Forms.TextBox();
+            this.txtDelUser = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnEditUser = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNewValue = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -290,7 +290,7 @@
             this.panel2.Controls.Add(this.btnDelUser);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.lblInfo);
-            this.panel2.Controls.Add(this.txtInfo);
+            this.panel2.Controls.Add(this.txtDelUser);
             this.panel2.Location = new System.Drawing.Point(410, 54);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(332, 200);
@@ -309,6 +309,7 @@
             this.btnDelUser.TabIndex = 10;
             this.btnDelUser.Text = "Find And Remove User";
             this.btnDelUser.UseVisualStyleBackColor = false;
+            this.btnDelUser.Click += new System.EventHandler(this.btnDelUser_Click);
             // 
             // label9
             // 
@@ -332,14 +333,14 @@
             this.lblInfo.TabIndex = 7;
             this.lblInfo.Text = "Username";
             // 
-            // txtInfo
+            // txtDelUser
             // 
-            this.txtInfo.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtInfo.Font = new System.Drawing.Font("Yu Gothic UI", 8F);
-            this.txtInfo.Location = new System.Drawing.Point(33, 100);
-            this.txtInfo.Name = "txtInfo";
-            this.txtInfo.Size = new System.Drawing.Size(253, 22);
-            this.txtInfo.TabIndex = 9;
+            this.txtDelUser.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtDelUser.Font = new System.Drawing.Font("Yu Gothic UI", 8F);
+            this.txtDelUser.Location = new System.Drawing.Point(33, 100);
+            this.txtDelUser.Name = "txtDelUser";
+            this.txtDelUser.Size = new System.Drawing.Size(253, 22);
+            this.txtDelUser.TabIndex = 9;
             // 
             // panel3
             // 
@@ -350,7 +351,7 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtNewValue);
             this.panel3.Controls.Add(this.txtUserTEdit);
             this.panel3.Location = new System.Drawing.Point(410, 265);
             this.panel3.Name = "panel3";
@@ -370,6 +371,7 @@
             this.btnEditUser.TabIndex = 14;
             this.btnEditUser.Text = "Find And Edit User";
             this.btnEditUser.UseVisualStyleBackColor = false;
+            this.btnEditUser.Click += new System.EventHandler(this.btnEditUser_Click);
             // 
             // label10
             // 
@@ -388,13 +390,13 @@
             this.cboxChoice.Font = new System.Drawing.Font("Yu Gothic UI", 8F);
             this.cboxChoice.FormattingEnabled = true;
             this.cboxChoice.Items.AddRange(new object[] {
-            "First Name",
-            "Last Name",
+            "Fname",
+            "Lname",
             "Username",
             "Password",
             "Role",
-            "Pay/M",
-            "Hrs/M"});
+            "PayM",
+            "HrsM"});
             this.cboxChoice.Location = new System.Drawing.Point(230, 61);
             this.cboxChoice.Name = "cboxChoice";
             this.cboxChoice.Size = new System.Drawing.Size(82, 21);
@@ -433,13 +435,13 @@
             this.label11.TabIndex = 7;
             this.label11.Text = "I want User";
             // 
-            // textBox1
+            // txtNewValue
             // 
-            this.textBox1.Font = new System.Drawing.Font("Yu Gothic UI", 8F);
-            this.textBox1.Location = new System.Drawing.Point(131, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 22);
-            this.textBox1.TabIndex = 13;
+            this.txtNewValue.Font = new System.Drawing.Font("Yu Gothic UI", 8F);
+            this.txtNewValue.Location = new System.Drawing.Point(131, 99);
+            this.txtNewValue.Name = "txtNewValue";
+            this.txtNewValue.Size = new System.Drawing.Size(155, 22);
+            this.txtNewValue.TabIndex = 13;
             // 
             // frmUserControl
             // 
@@ -492,12 +494,12 @@
         private System.Windows.Forms.TextBox txtLname;
         private System.Windows.Forms.Button btnDelUser;
         private System.Windows.Forms.Label lblInfo;
-        private System.Windows.Forms.TextBox txtInfo;
+        private System.Windows.Forms.TextBox txtDelUser;
         private System.Windows.Forms.Button btnEditUser;
         private System.Windows.Forms.ComboBox cboxChoice;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNewValue;
     }
 }

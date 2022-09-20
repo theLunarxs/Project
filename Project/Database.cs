@@ -79,15 +79,15 @@ namespace Project
             OpenConnection();
             try
             {
-                cmd = new SQLiteCommand($"DELETE FROM {tbl_name} WHERE Username = {Username};", con);
+                cmd = new SQLiteCommand($"DELETE FROM {tbl_name} WHERE Username = '{Username}';", con);
+                cmd.ExecuteNonQuery();
                 MessageBox.Show($"User {Username} Deleted From Databse Successfully", "Delete Successfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             }
             catch
             {
                 MessageBox.Show($"Username {Username} Not found, Please re-Enter Username", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            CloseConnection();
+    CloseConnection();
         }
         public void EditUser(string Username, string columnName, object nValue, string tbl_name = "tbl_users")
         {
@@ -99,18 +99,20 @@ namespace Project
                 {
                     case TypeCode.Int32:
                         {
-                            cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = {nValue} WHERE Username = {Username};", con);
+                            cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = {nValue} WHERE Username = '{Username}';", con);
                             cmd.ExecuteNonQuery();
+                            MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             break;
                         }
                     case TypeCode.String:
                         {
-                            cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = '{nValue}' WHERE Username = {Username};", con);
+                            cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = '{nValue}' WHERE Username = '{Username}';", con);
                             cmd.ExecuteNonQuery();
+                            MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             break;
                         }
                 }
-                MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {
