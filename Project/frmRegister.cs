@@ -57,7 +57,7 @@ namespace Project
             }
             else if(txtPassword.Text == txtConfPass.Text)
             {
-                db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text);
+                db.Register(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text);
                 
 
                 
