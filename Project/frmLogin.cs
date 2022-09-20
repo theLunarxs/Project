@@ -33,11 +33,14 @@ namespace Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(db.Login(txtUsername.Text, txtPassword.Text).Read() == true)
+            if(!(txtUsername.Text == "" && txtPassword.Text == ""))
             {
-                new frmAdmin().Show();
-                this.Hide();
-                db.CloseConnection();
+                if(db.Login(txtUsername.Text, txtPassword.Text).Read() == true)
+                {
+                    new frmAdmin().Show();
+                    this.Hide();
+                    db.CloseConnection();
+                }
             }
             else
             {

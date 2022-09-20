@@ -38,7 +38,7 @@ namespace Project.AdminPanelForms
                 }
                 else
                 {
-                    db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text, Role: cboxRole.ToString());
+                    db.InsertData(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text);
                 }
                 
                 

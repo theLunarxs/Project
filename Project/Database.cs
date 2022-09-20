@@ -59,7 +59,6 @@ namespace Project
             OpenConnection();
             cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}' and Password = '{Password}';", con);
             SQLiteDataReader reader = cmd.ExecuteReader();
-            
             return reader;
             
         }
