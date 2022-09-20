@@ -21,7 +21,7 @@ namespace Project.AdminPanelForms
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            if(!(txtUsername.Text == "" || txtPassword.Text == "" || txtFname.Text =="" || txtLname.Text == "" || cboxRole.SelectedItem.ToString() == ""))
+            if(!(txtUsername.Text == "" || txtPassword.Text == "" || txtFname.Text =="" || txtLname.Text == ""))
             {
                 if(!(txtHrsM.Text == "" && txtPayM.Text == ""))
                 {

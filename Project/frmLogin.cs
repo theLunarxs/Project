@@ -37,6 +37,7 @@ namespace Project
             {
                 new frmAdmin().Show();
                 this.Hide();
+                db.CloseConnection();
             }
             else
             {

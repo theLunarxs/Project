@@ -59,7 +59,54 @@ namespace Project
             OpenConnection();
             cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}' and Password = '{Password}';", con);
             SQLiteDataReader reader = cmd.ExecuteReader();
+            
             return reader;
+            
+        }
+        public void RemoveUser(string Username, string tbl_name = "tbl_users")
+        {
+
+            OpenConnection();
+            try
+            {
+                cmd = new SQLiteCommand($"DELETE FROM {tbl_name} WHERE Username = {Username};", con);
+                MessageBox.Show($"User {Username} Deleted From Databse Successfully", "Delete Successfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch
+            {
+                MessageBox.Show($"Username {Username} Not found, Please re-Enter Username", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            CloseConnection();
+        }
+        public void EditUser(string Username, string columnName, object nValue, string tbl_name = "tbl_users")
+        {
+            OpenConnection();
+            var type = Type.GetTypeCode(nValue.GetType());
+            try
+            {
+                switch (type)
+                {
+                    case TypeCode.Int32:
+                        {
+                            cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = {nValue} WHERE Username = {Username};", con);
+                            cmd.ExecuteNonQuery();
+                            break;
+                        }
+                    case TypeCode.String:
+                        {
+                            cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = '{nValue}' WHERE Username = {Username};", con);
+                            cmd.ExecuteNonQuery();
+                            break;
+                        }
+                }
+                MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Not Found \nPlease Enter Username Correctly", "Username not found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            CloseConnection();
         }
     }
 }
