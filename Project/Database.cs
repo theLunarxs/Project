@@ -80,11 +80,13 @@ namespace Project
                 return "";
             }
         }
+
         public static void SetWorkTime(DateTime loginTime, DateTime LogoutTime)
         {
-            int HoursWorked = Convert.ToInt32(loginTime.Subtract(loginTime).TotalHours);
+            int HoursWorked = Convert.ToInt32(LogoutTime.Subtract(loginTime).TotalHours);
             OpenConnection();
             cmd = new SQLiteCommand($"UPDATE tbl_users SET HrsW = HrsW + {HoursWorked} WHERE Username = '{LoginUserName}';", con);
+            cmd.ExecuteNonQuery();
             CloseConnection();
         }
 
