@@ -24,9 +24,8 @@ namespace Project
             {
                 SQLiteConnection.CreateFile("db_users.sqlite3");
                 OpenConnection();
-                cmd = new SQLiteCommand("CREATE TABLE tbl_users (UserID INT PRIMARY KEY, Fname varchar(32),Lname varchar(32),Username varchar(32) NOT NULL,Password varchar(32) NOT NULL,Role VARCHAR(32) NOT NULL,PayM int(12),HrsM int(12), HrsW int(12));"
-                    + "INSERT INTO tbl_users (Username, Password, Role) ValUES('admin', 'admin', 'admin');", con);
-                cmd.ExecuteNonQuery();
+                new SQLiteCommand("CREATE TABLE tbl_users (UserID INT PRIMARY KEY, Fname varchar(32),Lname varchar(32),Username varchar(32) NOT NULL,Password varchar(32) NOT NULL,Role VARCHAR(32) NOT NULL,PayM int(12),HrsM int(12), HrsW int(12));"
+                    + "INSERT INTO tbl_users (Username, Password, Role) ValUES('admin', 'admin', 'admin');", con).ExecuteNonQuery();
                 CloseConnection();
 
             }
@@ -37,8 +36,7 @@ namespace Project
         public static void Register(string Fname, string Lname, string Username, string Password, string Role = "user", int PayM = 0, int HrsM = 0, string tbl_name = "tbl_users", int HrsW = 0)
         {
             OpenConnection();
-            cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}';", con);
-            reader =cmd.ExecuteReader();
+            reader = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}';", con).ExecuteReader();
             if (!reader.Read())
             {
                 cmd = new SQLiteCommand($"INSERT INTO {tbl_name} (Fname, Lname, Username, Password, Role, PayM, HrsM, HrsW) VALUES(@Fname, @Lname, @Username, @Password, @Role, @PayM, @HrsM, @HrsW);", con);
