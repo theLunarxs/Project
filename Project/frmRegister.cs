@@ -13,11 +13,11 @@ namespace Project
 {
     public partial class frmRegister : Form
     {
-        Database db;
+        
         public frmRegister()
         {
             InitializeComponent();
-            db = new Database();
+            //db = new Database();
         }
         private void lblAlreadyHaveAccount_MouseHover(object sender, EventArgs e)
         {
@@ -57,7 +57,7 @@ namespace Project
             }
             else if(txtPassword.Text == txtConfPass.Text)
             {
-                db.Register(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text);
+                Database.Register(txtFname.Text, txtLname.Text, txtUsername.Text, txtPassword.Text);
                 
 
                 

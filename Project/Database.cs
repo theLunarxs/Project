@@ -9,33 +9,33 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public class Database
+    public static class Database
     {
-        private SQLiteConnection con;
-        private SQLiteCommand cmd;
-        public Database()
+        private static SQLiteConnection con;
+        private static SQLiteCommand cmd;
+        static Database()
         {
             con = new SQLiteConnection("Data Source = db_users.sqlite3");
-            if(!File.Exists("./db_users.sqlite3"))
+            if (!File.Exists("./db_users.sqlite3"))
             {
                 SQLiteConnection.CreateFile("db_users.sqlite3");
                 OpenConnection();
-                cmd = new SQLiteCommand("CREATE TABLE tbl_users (UserID INT AUTOINCREMENT PRIMARY KEY, Fname varchar(32),Lname varchar(32),Username varchar(32) NOT NULL,Password varchar(32) NOT NULL,Role VARCHAR(32) NOT NULL,PayM int(12),HrsM int(12));"
+                cmd = new SQLiteCommand("CREATE TABLE tbl_users (UserID INT PRIMARY KEY, Fname varchar(32),Lname varchar(32),Username varchar(32) NOT NULL,Password varchar(32) NOT NULL,Role VARCHAR(32) NOT NULL,PayM int(12),HrsM int(12));"
                     + "INSERT INTO tbl_users (Username, Password, Role) ValUES('admin', 'admin', 'admin');", con);
                 cmd.ExecuteNonQuery();
                 CloseConnection();
 
             }
         }
-        public void OpenConnection() { if (con.State != System.Data.ConnectionState.Open) con.Open(); }
-        public void CloseConnection() { if (con.State != System.Data.ConnectionState.Closed) con.Close(); }
+        static void OpenConnection() { if (con.State != System.Data.ConnectionState.Open) con.Open(); }
+        static void CloseConnection() { if (con.State != System.Data.ConnectionState.Closed) con.Close(); }
 
-        public void Register(string Fname, string Lname, string Username, string Password, string Role="user", int PayM=0, int HrsM = 0, string tbl_name ="tbl_users")
+        public static void Register(string Fname, string Lname, string Username, string Password, string Role = "user", int PayM = 0, int HrsM = 0, string tbl_name = "tbl_users")
         {
             OpenConnection();
             cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}';", con);
             SQLiteDataReader reader = cmd.ExecuteReader();
-            if(!reader.Read())
+            if (!reader.Read())
             {
                 cmd = new SQLiteCommand($"INSERT INTO {tbl_name} (Fname, Lname, Username, Password, Role, PayM, HrsM) VALUES(@Fname, @Lname, @Username, @Password, @Role, @PayM, @HrsM);", con);
                 cmd.Parameters.AddWithValue("@Fname", Fname);
@@ -54,7 +54,7 @@ namespace Project
             }
             CloseConnection();
         }
-        public bool Login(string Username, string Password, string tbl_name = "tbl_users")
+        public static bool Login(string Username, string Password, string tbl_name = "tbl_users")
         {
             OpenConnection();
             cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}' and Password = '{Password}';", con);
@@ -65,15 +65,15 @@ namespace Project
                 CloseConnection();
                 return true;
             }
-            else 
+            else
             {
                 reader.Close();
                 CloseConnection();
                 return false;
-            } 
+            }
         }
 
-        public void RemoveUser(string Username, string tbl_name = "tbl_users")
+        public static void RemoveUser(string Username, string tbl_name = "tbl_users")
         {
 
             OpenConnection();
@@ -87,9 +87,10 @@ namespace Project
             {
                 MessageBox.Show($"Username {Username} Not found, Please re-Enter Username", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-    CloseConnection();
+            CloseConnection();
         }
-        public void EditUser(string Username, string columnName, object nValue, string tbl_name = "tbl_users")
+
+        public static void EditUser(string Username, string columnName, object nValue, string tbl_name = "tbl_users")
         {
             OpenConnection();
             var type = Type.GetTypeCode(nValue.GetType());
@@ -101,18 +102,17 @@ namespace Project
                         {
                             cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = {nValue} WHERE Username = '{Username}';", con);
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             break;
                         }
                     case TypeCode.String:
                         {
                             cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = '{nValue}' WHERE Username = '{Username}';", con);
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             break;
                         }
+                        MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                //MessageBox.Show($"{columnName} of {Username} changed to {nValue}", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch
             {

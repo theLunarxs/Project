@@ -12,11 +12,11 @@ namespace Project
 {
     public partial class frmLogin : Form
     {
-        Database db;
+        //Database db;
         public frmLogin()
         {
             InitializeComponent();
-            db = new Database();
+            //db = new Database();
         }
 
         private void chckbxShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace Project
         {
             if(!(txtUsername.Text == "" && txtPassword.Text == ""))
             {
-                if(db.Login(txtUsername.Text, txtPassword.Text))
+                if(Database.Login(txtUsername.Text, txtPassword.Text))
                 {
                     new frmAdmin().Show();
                     this.Hide();
