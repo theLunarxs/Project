@@ -131,5 +131,28 @@ namespace Project
             }
             CloseConnection();
         }
+        public static List<string> GetUserData(string Username)
+        {
+            List<string> User = new List<string>();
+            string FirstName= " ", LastName = " ",Role = " ", PayM = " ", HrsM = " ", HrsW = " ";
+
+            reader = new SQLiteCommand($"SELECT * FROM tbl_users WHERE Username ='{Username}';", con).ExecuteReader();
+            while (reader.Read())
+            {
+                FirstName = reader["Fname"].ToString();
+                LastName = reader["Lname"].ToString();
+                Role = reader["Role"].ToString();
+                PayM = reader["PayM"].ToString();
+                HrsM = reader["HrsM"].ToString();
+                HrsW = reader["HrsW"].ToString();
+            }
+            User.Add(FirstName);
+            User.Add(LastName);
+            User.Add(Role);
+            User.Add(PayM);
+            User.Add(HrsM);
+            User.Add(HrsW);
+            return User;
+        }
     }
 }
