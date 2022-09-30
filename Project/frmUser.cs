@@ -12,19 +12,26 @@ namespace Project
 {
     public partial class frmUser : Form
     {
-        public DateTime loginTime;
-        public DateTime logoutTime;
+        
+        public DateTime LogoutTime;
         public frmUser()
         {
             InitializeComponent();
-            loginTime = DateTime.Now;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            logoutTime = DateTime.Now;
-            Database.SetWorkTime(loginTime, logoutTime);
+            LogoutTime = DateTime.Now;
+            Database.SetWorkTime(LogoutTime);
             Application.Exit();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            LogoutTime = DateTime.Now;
+            Database.SetWorkTime(LogoutTime);
+            new frmLogin().Show();
+            this.Close();
         }
     }
 }

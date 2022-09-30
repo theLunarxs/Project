@@ -14,7 +14,7 @@ namespace Project
     public partial class frmAdmin : Form
     {
 
-
+        DateTime LogoutTime;
         public frmAdmin()
         {
             InitializeComponent();
@@ -26,14 +26,11 @@ namespace Project
             frmDashboard_Vrb.Show();
 
         }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            new frmLogin().Show();
-            this.Close();
-        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            LogoutTime = DateTime.Now;
+            Database.SetWorkTime(LogoutTime);
             Application.Exit();
         }
 
@@ -53,6 +50,14 @@ namespace Project
             frmUserControl frmUserControl_Vrb = new frmUserControl(){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             this.pnlContent.Controls.Add(frmUserControl_Vrb);
             frmUserControl_Vrb.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            LogoutTime = DateTime.Now;
+            Database.SetWorkTime(LogoutTime);
+            new frmLogin().Show();
+            this.Close();
         }
     }
 }

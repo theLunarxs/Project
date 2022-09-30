@@ -16,6 +16,7 @@ namespace Project
         private static SQLiteCommand cmd;
         private static SQLiteDataReader reader;
         private static string LoginUserName;
+        private static DateTime LoginTime;
         static Database()
         {
             con = new SQLiteConnection("Data Source = db_users.sqlite3");
@@ -61,8 +62,7 @@ namespace Project
         public static string Login(string Username, string Password, string tbl_name = "tbl_users")
         {
             OpenConnection();
-            cmd = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}' and Password = '{Password}';", con);
-            reader = cmd.ExecuteReader();
+            reader = new SQLiteCommand($"SELECT * FROM {tbl_name} WHERE Username = '{Username}' and Password = '{Password}';", con).ExecuteReader();
             if (reader.Read())
             {
                 reader.Close();
@@ -70,6 +70,7 @@ namespace Project
                 string role = cmd.ExecuteScalar().ToString();
                 CloseConnection();
                 LoginUserName = Username;
+                LoginTime = DateTime.Now;
                 return role == "admin" ? "admin" : "user";
                 
             }
@@ -81,12 +82,11 @@ namespace Project
             }
         }
 
-        public static void SetWorkTime(DateTime loginTime, DateTime LogoutTime)
+        public static void SetWorkTime(DateTime LogoutTime)
         {
-            int HoursWorked = Convert.ToInt32(LogoutTime.Subtract(loginTime).TotalHours);
+            int HoursWorked = Convert.ToInt32(LogoutTime.Subtract(LogoutTime).TotalHours);
             OpenConnection();
-            cmd = new SQLiteCommand($"UPDATE tbl_users SET HrsW = HrsW + {HoursWorked} WHERE Username = '{LoginUserName}';", con);
-            cmd.ExecuteNonQuery();
+            new SQLiteCommand($"UPDATE tbl_users SET HrsW = HrsW + {HoursWorked} WHERE Username = '{LoginUserName}';", con).ExecuteNonQuery();
             CloseConnection();
         }
 
@@ -96,8 +96,7 @@ namespace Project
             OpenConnection();
             try
             {
-                cmd = new SQLiteCommand($"DELETE FROM {tbl_name} WHERE Username = '{Username}';", con);
-                cmd.ExecuteNonQuery();
+                new SQLiteCommand($"DELETE FROM {tbl_name} WHERE Username = '{Username}';", con).ExecuteNonQuery();
                 MessageBox.Show($"User {Username} Deleted From Databse Successfully", "Delete Successfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
@@ -117,14 +116,12 @@ namespace Project
                 {
                     case TypeCode.Int32:
                         {
-                            cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = {nValue} WHERE Username = '{Username}';", con);
-                            cmd.ExecuteNonQuery();
+                           new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = {nValue} WHERE Username = '{Username}';", con).ExecuteNonQuery();
                             break;
                         }
                     case TypeCode.String:
                         {
-                            cmd = new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = '{nValue}' WHERE Username = '{Username}';", con);
-                            cmd.ExecuteNonQuery();
+                            new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = '{nValue}' WHERE Username = '{Username}';", con).ExecuteNonQuery();
                             break;
                         }
                 }

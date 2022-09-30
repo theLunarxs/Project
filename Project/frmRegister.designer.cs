@@ -71,9 +71,8 @@
             this.txtFname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFname.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFname.Location = new System.Drawing.Point(31, 128);
-            this.txtFname.Multiline = true;
             this.txtFname.Name = "txtFname";
-            this.txtFname.Size = new System.Drawing.Size(290, 25);
+            this.txtFname.Size = new System.Drawing.Size(290, 26);
             this.txtFname.TabIndex = 0;
             // 
             // txtLname
@@ -82,9 +81,8 @@
             this.txtLname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLname.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLname.Location = new System.Drawing.Point(31, 193);
-            this.txtLname.Multiline = true;
             this.txtLname.Name = "txtLname";
-            this.txtLname.Size = new System.Drawing.Size(290, 25);
+            this.txtLname.Size = new System.Drawing.Size(290, 26);
             this.txtLname.TabIndex = 1;
             // 
             // label1
@@ -103,9 +101,8 @@
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(31, 255);
-            this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(290, 25);
+            this.txtUsername.Size = new System.Drawing.Size(290, 26);
             this.txtUsername.TabIndex = 2;
             // 
             // lblUsername
@@ -124,10 +121,9 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(31, 322);
-            this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(290, 25);
+            this.txtPassword.Size = new System.Drawing.Size(290, 26);
             this.txtPassword.TabIndex = 3;
             // 
             // llbPassword
@@ -189,10 +185,9 @@
             this.txtConfPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtConfPass.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfPass.Location = new System.Drawing.Point(31, 387);
-            this.txtConfPass.Multiline = true;
             this.txtConfPass.Name = "txtConfPass";
             this.txtConfPass.PasswordChar = '•';
-            this.txtConfPass.Size = new System.Drawing.Size(290, 25);
+            this.txtConfPass.Size = new System.Drawing.Size(290, 26);
             this.txtConfPass.TabIndex = 4;
             // 
             // lblConfPass
