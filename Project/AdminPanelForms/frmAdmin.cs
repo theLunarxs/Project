@@ -59,5 +59,14 @@ namespace Project
             new frmLogin().Show();
             this.Close();
         }
+
+        private void btnUserData_Click(object sender, EventArgs e)
+        {
+            lblPageInfo.Text = "User Control";
+            this.pnlContent.Controls.Clear();
+            frmUserInfo frmUsserData = new frmUserInfo() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            this.pnlContent.Controls.Add(frmUsserData);
+            frmUsserData.Show();
+        }
     }
 }

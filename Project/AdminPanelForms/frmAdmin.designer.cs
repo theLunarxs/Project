@@ -102,6 +102,7 @@
             this.btnUserData.Text = "User Data     ";
             this.btnUserData.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnUserData.UseVisualStyleBackColor = true;
+            this.btnUserData.Click += new System.EventHandler(this.btnUserData_Click);
             // 
             // btnUserControl
             // 

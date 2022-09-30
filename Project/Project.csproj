@@ -77,6 +77,12 @@
     <Compile Include="AdminPanelForms\frmUserControl.Designer.cs">
       <DependentUpon>frmUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanelForms\frmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanelForms\frmUserInfo.Designer.cs">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="AdminPanelForms\frmAdmin.cs">
       <SubType>Form</SubType>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPanelForms\frmUserControl.resx">
       <DependentUpon>frmUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanelForms\frmUserInfo.resx">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

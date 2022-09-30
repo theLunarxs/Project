@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project.AdminPanelForms
 {
-    public partial class frmUserData : Form
+    public partial class frmUserInfo : Form
     {
-        public frmUserData()
+        public frmUserInfo()
         {
             InitializeComponent();
         }
