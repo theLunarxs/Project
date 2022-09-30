@@ -12,11 +12,9 @@ namespace Project
 {
     public partial class frmLogin : Form
     {
-        //Database db;
         public frmLogin()
         {
             InitializeComponent();
-            //db = new Database();
         }
 
         private void chckbxShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -35,18 +33,24 @@ namespace Project
         {
             if(!(txtUsername.Text == "" && txtPassword.Text == ""))
             {
-                if(Database.Login(txtUsername.Text, txtPassword.Text))
+                if(Database.Login(txtUsername.Text, txtPassword.Text) == "admin")
                 {
                     new frmAdmin().Show();
                     this.Hide();
                 }
+                else if(Database.Login(txtUsername.Text, txtPassword.Text) == "user")
+                {
+                    new frmUser().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Username Or Password is Incorrect", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtPassword.Text = "";
+                    txtUsername.Text = "";
+                }
             }
-            else
-            {
-                MessageBox.Show("Username Or Password is Incorrect", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtPassword.Text = "";
-                txtUsername.Text = "";
-            }
+            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
