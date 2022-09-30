@@ -16,5 +16,17 @@ namespace Project.AdminPanelForms
         {
             InitializeComponent();
         }
+
+        private void btnDelUser_Click(object sender, EventArgs e)
+        {
+            Database.UserInfo user = Database.GetUserData(txtUsername.Text);
+            lblFullname.Text = user.Firstname + " " + user.Lastname;
+            lblRole.Text = user.Role;
+            lblHrsM.Text = user.HrsM;
+            lblHrsW.Text = user.HrsW;
+            lblPayM.Text = user.PayM;
+            lblUsername.Text = user.Username;
+            txtUsername.Text = "";
+        }
     }
 }

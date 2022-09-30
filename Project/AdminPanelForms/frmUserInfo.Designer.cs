@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblFullname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDelUser = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblRole = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblHrsM = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblPayM = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lblHrsW = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.lblNumTusers = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -60,12 +60,23 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel2.Controls.Add(this.lblNumTusers);
+            this.panel2.Controls.Add(this.lblFullname);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(12, 125);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(209, 200);
             this.panel2.TabIndex = 1;
+            // 
+            // lblFullname
+            // 
+            this.lblFullname.AutoSize = true;
+            this.lblFullname.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullname.ForeColor = System.Drawing.Color.White;
+            this.lblFullname.Location = new System.Drawing.Point(66, 98);
+            this.lblFullname.Name = "lblFullname";
+            this.lblFullname.Size = new System.Drawing.Size(65, 40);
+            this.lblFullname.TabIndex = 11;
+            this.lblFullname.Text = "999";
             // 
             // label1
             // 
@@ -91,15 +102,16 @@
             this.btnDelUser.TabIndex = 10;
             this.btnDelUser.Text = "Find User";
             this.btnDelUser.UseVisualStyleBackColor = false;
+            this.btnDelUser.Click += new System.EventHandler(this.btnDelUser_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Yu Gothic UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(23, 32);
+            this.label9.Location = new System.Drawing.Point(37, 34);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(183, 32);
+            this.label9.Size = new System.Drawing.Size(160, 30);
             this.label9.TabIndex = 0;
             this.label9.Text = "Enter Username";
             // 
@@ -115,12 +127,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.lblUsername);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(267, 125);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(209, 200);
             this.panel1.TabIndex = 1;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(70, 98);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(65, 40);
+            this.lblUsername.TabIndex = 11;
+            this.lblUsername.Text = "999";
             // 
             // label2
             // 
@@ -136,12 +159,23 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.lblRole);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(545, 125);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(209, 200);
             this.panel3.TabIndex = 1;
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.White;
+            this.lblRole.Location = new System.Drawing.Point(71, 98);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(65, 40);
+            this.lblRole.TabIndex = 11;
+            this.lblRole.Text = "999";
             // 
             // label3
             // 
@@ -157,12 +191,23 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.lblHrsM);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(267, 348);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(209, 167);
             this.panel5.TabIndex = 1;
+            // 
+            // lblHrsM
+            // 
+            this.lblHrsM.AutoSize = true;
+            this.lblHrsM.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHrsM.ForeColor = System.Drawing.Color.White;
+            this.lblHrsM.Location = new System.Drawing.Point(70, 85);
+            this.lblHrsM.Name = "lblHrsM";
+            this.lblHrsM.Size = new System.Drawing.Size(65, 40);
+            this.lblHrsM.TabIndex = 11;
+            this.lblHrsM.Text = "999";
             // 
             // label5
             // 
@@ -178,12 +223,23 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.lblPayM);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(12, 348);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(209, 167);
             this.panel4.TabIndex = 1;
+            // 
+            // lblPayM
+            // 
+            this.lblPayM.AutoSize = true;
+            this.lblPayM.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayM.ForeColor = System.Drawing.Color.White;
+            this.lblPayM.Location = new System.Drawing.Point(66, 85);
+            this.lblPayM.Name = "lblPayM";
+            this.lblPayM.Size = new System.Drawing.Size(65, 40);
+            this.lblPayM.TabIndex = 11;
+            this.lblPayM.Text = "999";
             // 
             // label4
             // 
@@ -199,12 +255,23 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel6.Controls.Add(this.label12);
+            this.panel6.Controls.Add(this.lblHrsW);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(545, 348);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(209, 167);
             this.panel6.TabIndex = 1;
+            // 
+            // lblHrsW
+            // 
+            this.lblHrsW.AutoSize = true;
+            this.lblHrsW.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHrsW.ForeColor = System.Drawing.Color.White;
+            this.lblHrsW.Location = new System.Drawing.Point(77, 85);
+            this.lblHrsW.Name = "lblHrsW";
+            this.lblHrsW.Size = new System.Drawing.Size(65, 40);
+            this.lblHrsW.TabIndex = 11;
+            this.lblHrsW.Text = "999";
             // 
             // label6
             // 
@@ -217,73 +284,7 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Worked this month";
             // 
-            // lblNumTusers
-            // 
-            this.lblNumTusers.AutoSize = true;
-            this.lblNumTusers.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumTusers.ForeColor = System.Drawing.Color.White;
-            this.lblNumTusers.Location = new System.Drawing.Point(66, 98);
-            this.lblNumTusers.Name = "lblNumTusers";
-            this.lblNumTusers.Size = new System.Drawing.Size(65, 40);
-            this.lblNumTusers.TabIndex = 11;
-            this.lblNumTusers.Text = "999";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(66, 85);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 40);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "999";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(70, 85);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 40);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "999";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(70, 98);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 40);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "999";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(71, 98);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 40);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "999";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(77, 85);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 40);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "999";
-            // 
-            // frmUserData
+            // frmUserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -299,7 +300,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmUserData";
+            this.Name = "frmUserInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUserData";
             this.panel2.ResumeLayout(false);
@@ -336,11 +337,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblNumTusers;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblFullname;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Label lblHrsM;
+        private System.Windows.Forms.Label lblPayM;
+        private System.Windows.Forms.Label lblHrsW;
     }
 }

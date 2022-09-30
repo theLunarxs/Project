@@ -131,28 +131,32 @@ namespace Project
             }
             CloseConnection();
         }
-        public static List<string> GetUserData(string Username)
+        public struct UserInfo
         {
-            List<string> User = new List<string>();
-            string FirstName= " ", LastName = " ",Role = " ", PayM = " ", HrsM = " ", HrsW = " ";
+            public string Firstname;
+            public string Lastname;
+            public string Username;
+            public string Role;
+            public string PayM;
+            public string HrsM;
+            public string HrsW;
+        }
+        public static UserInfo GetUserData(string Username)
+        {
+            UserInfo myUser = new UserInfo();
 
-            reader = new SQLiteCommand($"SELECT * FROM tbl_users WHERE Username ='{Username}';", con).ExecuteReader();
-            while (reader.Read())
+            reader = new SQLiteCommand($"SELECT Fname, Lname, Username, Role, PayM, HrsM, HrsW FROM tbl_users WHERE Username ='{Username}';", con).ExecuteReader();
+            if(reader.Read())
             {
-                FirstName = reader["Fname"].ToString();
-                LastName = reader["Lname"].ToString();
-                Role = reader["Role"].ToString();
-                PayM = reader["PayM"].ToString();
-                HrsM = reader["HrsM"].ToString();
-                HrsW = reader["HrsW"].ToString();
+                myUser.Firstname = reader.GetString(0);
+                myUser.Lastname = reader.GetString(1);
+                myUser.Username = reader.GetString(2);
+                myUser.Role = reader.GetString(3);
+                myUser.PayM = reader.GetString(4);
+                myUser.HrsM = reader.GetString(5);
+                myUser.HrsW = reader.GetString(6);
             }
-            User.Add(FirstName);
-            User.Add(LastName);
-            User.Add(Role);
-            User.Add(PayM);
-            User.Add(HrsM);
-            User.Add(HrsW);
-            return User;
+            return myUser;
         }
     }
 }
