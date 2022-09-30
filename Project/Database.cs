@@ -40,7 +40,7 @@ namespace Project
             reader =cmd.ExecuteReader();
             if (!reader.Read())
             {
-                cmd = new SQLiteCommand($"INSERT INTO {tbl_name} (Fname, Lname, Username, Password, Role, PayM, HrsM) VALUES(@Fname, @Lname, @Username, @Password, @Role, @PayM, @HrsM, @HrsW);", con);
+                cmd = new SQLiteCommand($"INSERT INTO {tbl_name} (Fname, Lname, Username, Password, Role, PayM, HrsM, HrsW) VALUES(@Fname, @Lname, @Username, @Password, @Role, @PayM, @HrsM, @HrsW);", con);
                 cmd.Parameters.AddWithValue("@Fname", Fname);
                 cmd.Parameters.AddWithValue("@Lname", Lname);
                 cmd.Parameters.AddWithValue("@Username", Username);
