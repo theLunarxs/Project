@@ -167,9 +167,9 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(100, 275);
+            this.panel4.Location = new System.Drawing.Point(181, 275);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(562, 240);
+            this.panel4.Size = new System.Drawing.Size(397, 240);
             this.panel4.TabIndex = 0;
             // 
             // label1
@@ -177,7 +177,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(32, 93);
+            this.label1.Location = new System.Drawing.Point(84, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 35);
             this.label1.TabIndex = 0;
@@ -188,7 +188,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(109, 165);
+            this.label2.Location = new System.Drawing.Point(299, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 40);
             this.label2.TabIndex = 1;
@@ -199,7 +199,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(341, 93);
+            this.label3.Location = new System.Drawing.Point(84, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(149, 35);
             this.label3.TabIndex = 0;
@@ -208,16 +208,16 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Project.Properties.Resources.Download;
-            this.pictureBox5.Location = new System.Drawing.Point(392, 13);
+            this.pictureBox5.Location = new System.Drawing.Point(17, 155);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(56, 50);
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Project.Properties.Resources.WebVisits;
-            this.pictureBox4.Location = new System.Drawing.Point(95, 13);
+            this.pictureBox4.Location = new System.Drawing.Point(17, 26);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(56, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -256,7 +256,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(400, 165);
+            this.label4.Location = new System.Drawing.Point(299, 161);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 40);
             this.label4.TabIndex = 1;
