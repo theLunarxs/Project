@@ -144,18 +144,19 @@ namespace Project
         public static UserInfo GetUserData(string Username)
         {
             UserInfo myUser = new UserInfo();
-
+            OpenConnection();
             reader = new SQLiteCommand($"SELECT Fname, Lname, Username, Role, PayM, HrsM, HrsW FROM tbl_users WHERE Username ='{Username}';", con).ExecuteReader();
             if(reader.Read())
             {
-                myUser.Firstname = reader.GetString(0);
-                myUser.Lastname = reader.GetString(1);
-                myUser.Username = reader.GetString(2);
-                myUser.Role = reader.GetString(3);
-                myUser.PayM = reader.GetString(4);
-                myUser.HrsM = reader.GetString(5);
-                myUser.HrsW = reader.GetString(6);
+                myUser.Firstname = reader["Fname"].ToString();
+                myUser.Lastname = reader["Lname"].ToString();
+                myUser.Username = reader["Username"].ToString();
+                myUser.Role = reader["Role"].ToString();
+                myUser.PayM = reader["PayM"].ToString();
+                myUser.HrsM = reader["HrsM"].ToString();
+                myUser.HrsW = reader["HrsW"].ToString();
             }
+            CloseConnection();
             return myUser;
         }
     }
