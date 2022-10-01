@@ -177,6 +177,18 @@
   <ItemGroup>
     <None Include="Icons\Download.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\logoutIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\tUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Ouser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\admins.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
