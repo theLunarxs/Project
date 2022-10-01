@@ -148,13 +148,13 @@ namespace Project
             reader = new SQLiteCommand($"SELECT Fname, Lname, Username, Role, PayM, HrsM, HrsW FROM tbl_users WHERE Username ='{Username}';", con).ExecuteReader();
             if(reader.Read())
             {
-                myUser.Firstname = reader["Fname"].ToString();
-                myUser.Lastname = reader["Lname"].ToString();
-                myUser.Username = reader["Username"].ToString();
-                myUser.Role = reader["Role"].ToString();
-                myUser.PayM = reader["PayM"].ToString();
-                myUser.HrsM = reader["HrsM"].ToString();
-                myUser.HrsW = reader["HrsW"].ToString();
+                myUser.Firstname = reader["Fname"].ToString().Trim();
+                myUser.Lastname = reader["Lname"].ToString().Trim();
+                myUser.Username = reader["Username"].ToString().Trim();
+                myUser.Role = reader["Role"].ToString().Trim();
+                myUser.PayM = reader["PayM"].ToString().Trim();
+                myUser.HrsM = reader["HrsM"].ToString().Trim();
+                myUser.HrsW = reader["HrsW"].ToString().Trim();
             }
             CloseConnection();
             return myUser;

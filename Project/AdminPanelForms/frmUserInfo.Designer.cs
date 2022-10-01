@@ -70,11 +70,11 @@
             // lblFullname
             // 
             this.lblFullname.AutoSize = true;
-            this.lblFullname.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullname.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFullname.ForeColor = System.Drawing.Color.White;
             this.lblFullname.Location = new System.Drawing.Point(66, 98);
             this.lblFullname.Name = "lblFullname";
-            this.lblFullname.Size = new System.Drawing.Size(65, 40);
+            this.lblFullname.Size = new System.Drawing.Size(49, 30);
             this.lblFullname.TabIndex = 11;
             this.lblFullname.Text = "999";
             // 
@@ -137,11 +137,11 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(70, 98);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(65, 40);
+            this.lblUsername.Size = new System.Drawing.Size(49, 30);
             this.lblUsername.TabIndex = 11;
             this.lblUsername.Text = "999";
             // 
@@ -169,11 +169,11 @@
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(71, 98);
+            this.lblRole.Location = new System.Drawing.Point(77, 98);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(65, 40);
+            this.lblRole.Size = new System.Drawing.Size(49, 30);
             this.lblRole.TabIndex = 11;
             this.lblRole.Text = "999";
             // 
@@ -201,11 +201,11 @@
             // lblHrsM
             // 
             this.lblHrsM.AutoSize = true;
-            this.lblHrsM.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHrsM.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHrsM.ForeColor = System.Drawing.Color.White;
             this.lblHrsM.Location = new System.Drawing.Point(70, 85);
             this.lblHrsM.Name = "lblHrsM";
-            this.lblHrsM.Size = new System.Drawing.Size(65, 40);
+            this.lblHrsM.Size = new System.Drawing.Size(49, 30);
             this.lblHrsM.TabIndex = 11;
             this.lblHrsM.Text = "999";
             // 
@@ -233,11 +233,11 @@
             // lblPayM
             // 
             this.lblPayM.AutoSize = true;
-            this.lblPayM.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPayM.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPayM.ForeColor = System.Drawing.Color.White;
             this.lblPayM.Location = new System.Drawing.Point(66, 85);
             this.lblPayM.Name = "lblPayM";
-            this.lblPayM.Size = new System.Drawing.Size(65, 40);
+            this.lblPayM.Size = new System.Drawing.Size(49, 30);
             this.lblPayM.TabIndex = 11;
             this.lblPayM.Text = "999";
             // 
@@ -265,11 +265,11 @@
             // lblHrsW
             // 
             this.lblHrsW.AutoSize = true;
-            this.lblHrsW.Font = new System.Drawing.Font("Yu Gothic UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHrsW.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHrsW.ForeColor = System.Drawing.Color.White;
             this.lblHrsW.Location = new System.Drawing.Point(77, 85);
             this.lblHrsW.Name = "lblHrsW";
-            this.lblHrsW.Size = new System.Drawing.Size(65, 40);
+            this.lblHrsW.Size = new System.Drawing.Size(49, 30);
             this.lblHrsW.TabIndex = 11;
             this.lblHrsW.Text = "999";
             // 

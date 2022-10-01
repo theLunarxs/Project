@@ -20,7 +20,7 @@ namespace Project.AdminPanelForms
         private void btnDelUser_Click(object sender, EventArgs e)
         {
             Database.UserInfo user = Database.GetUserData(txtUsername.Text);
-            lblFullname.Text = user.Firstname + " " + user.Lastname;
+            lblFullname.Text = user.Firstname + user.Lastname;
             lblRole.Text = user.Role;
             lblHrsM.Text = user.HrsM;
             lblHrsW.Text = user.HrsW;
