@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl1 = new System.Windows.Forms.Panel();
             this.lblFullname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnDelUser = new System.Windows.Forms.Button();
+            this.btnFindUser = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl2 = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnl3 = new System.Windows.Forms.Panel();
             this.lblRole = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnl5 = new System.Windows.Forms.Panel();
             this.lblHrsM = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnl4 = new System.Windows.Forms.Panel();
             this.lblPayM = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.pnl6 = new System.Windows.Forms.Panel();
             this.lblHrsW = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.pnl1.SuspendLayout();
+            this.pnl2.SuspendLayout();
+            this.pnl3.SuspendLayout();
+            this.pnl5.SuspendLayout();
+            this.pnl4.SuspendLayout();
+            this.pnl6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // pnl1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel2.Controls.Add(this.lblFullname);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(12, 125);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(209, 200);
-            this.panel2.TabIndex = 1;
+            this.pnl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
+            this.pnl1.Controls.Add(this.lblFullname);
+            this.pnl1.Controls.Add(this.label1);
+            this.pnl1.Location = new System.Drawing.Point(12, 125);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(209, 200);
+            this.pnl1.TabIndex = 1;
             // 
             // lblFullname
             // 
-            this.lblFullname.AutoSize = true;
             this.lblFullname.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFullname.ForeColor = System.Drawing.Color.White;
-            this.lblFullname.Location = new System.Drawing.Point(69, 98);
+            this.lblFullname.Location = new System.Drawing.Point(19, 80);
             this.lblFullname.Name = "lblFullname";
-            this.lblFullname.Size = new System.Drawing.Size(0, 30);
+            this.lblFullname.Size = new System.Drawing.Size(166, 66);
             this.lblFullname.TabIndex = 11;
+            this.lblFullname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -88,20 +88,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Full name";
             // 
-            // btnDelUser
+            // btnFindUser
             // 
-            this.btnDelUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(67)))), ((int)(((byte)(189)))));
-            this.btnDelUser.FlatAppearance.BorderSize = 0;
-            this.btnDelUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelUser.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelUser.ForeColor = System.Drawing.Color.White;
-            this.btnDelUser.Location = new System.Drawing.Point(560, 42);
-            this.btnDelUser.Name = "btnDelUser";
-            this.btnDelUser.Size = new System.Drawing.Size(97, 22);
-            this.btnDelUser.TabIndex = 10;
-            this.btnDelUser.Text = "Find User";
-            this.btnDelUser.UseVisualStyleBackColor = false;
-            this.btnDelUser.Click += new System.EventHandler(this.btnDelUser_Click);
+            this.btnFindUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(67)))), ((int)(((byte)(189)))));
+            this.btnFindUser.FlatAppearance.BorderSize = 0;
+            this.btnFindUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFindUser.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindUser.ForeColor = System.Drawing.Color.White;
+            this.btnFindUser.Location = new System.Drawing.Point(560, 42);
+            this.btnFindUser.Name = "btnFindUser";
+            this.btnFindUser.Size = new System.Drawing.Size(97, 22);
+            this.btnFindUser.TabIndex = 10;
+            this.btnFindUser.Text = "Find User";
+            this.btnFindUser.UseVisualStyleBackColor = false;
+            this.btnFindUser.Click += new System.EventHandler(this.btnFindUser_Click);
             // 
             // label9
             // 
@@ -123,25 +123,25 @@
             this.txtUsername.Size = new System.Drawing.Size(298, 22);
             this.txtUsername.TabIndex = 9;
             // 
-            // panel1
+            // pnl2
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel1.Controls.Add(this.lblUsername);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(267, 125);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 200);
-            this.panel1.TabIndex = 1;
+            this.pnl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
+            this.pnl2.Controls.Add(this.lblUsername);
+            this.pnl2.Controls.Add(this.label2);
+            this.pnl2.Location = new System.Drawing.Point(267, 125);
+            this.pnl2.Name = "pnl2";
+            this.pnl2.Size = new System.Drawing.Size(209, 200);
+            this.pnl2.TabIndex = 1;
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(65, 98);
+            this.lblUsername.Location = new System.Drawing.Point(24, 80);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(0, 30);
+            this.lblUsername.Size = new System.Drawing.Size(161, 66);
             this.lblUsername.TabIndex = 11;
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -154,25 +154,25 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Username";
             // 
-            // panel3
+            // pnl3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel3.Controls.Add(this.lblRole);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(545, 125);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(209, 200);
-            this.panel3.TabIndex = 1;
+            this.pnl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
+            this.pnl3.Controls.Add(this.lblRole);
+            this.pnl3.Controls.Add(this.label3);
+            this.pnl3.Location = new System.Drawing.Point(545, 125);
+            this.pnl3.Name = "pnl3";
+            this.pnl3.Size = new System.Drawing.Size(209, 200);
+            this.pnl3.TabIndex = 1;
             // 
             // lblRole
             // 
-            this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(66, 98);
+            this.lblRole.Location = new System.Drawing.Point(32, 80);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(0, 30);
+            this.lblRole.Size = new System.Drawing.Size(148, 66);
             this.lblRole.TabIndex = 11;
+            this.lblRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -185,26 +185,25 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Role";
             // 
-            // panel5
+            // pnl5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel5.Controls.Add(this.lblHrsM);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(267, 348);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(209, 167);
-            this.panel5.TabIndex = 1;
+            this.pnl5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
+            this.pnl5.Controls.Add(this.lblHrsM);
+            this.pnl5.Controls.Add(this.label5);
+            this.pnl5.Location = new System.Drawing.Point(267, 348);
+            this.pnl5.Name = "pnl5";
+            this.pnl5.Size = new System.Drawing.Size(209, 167);
+            this.pnl5.TabIndex = 1;
             // 
             // lblHrsM
             // 
-            this.lblHrsM.AutoSize = true;
             this.lblHrsM.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHrsM.ForeColor = System.Drawing.Color.White;
-            this.lblHrsM.Location = new System.Drawing.Point(81, 85);
+            this.lblHrsM.Location = new System.Drawing.Point(56, 90);
             this.lblHrsM.Name = "lblHrsM";
-            this.lblHrsM.Size = new System.Drawing.Size(25, 30);
+            this.lblHrsM.Size = new System.Drawing.Size(81, 44);
             this.lblHrsM.TabIndex = 11;
-            this.lblHrsM.Text = "0";
+            this.lblHrsM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -217,26 +216,25 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Hours Per Month";
             // 
-            // panel4
+            // pnl4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel4.Controls.Add(this.lblPayM);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(12, 348);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(209, 167);
-            this.panel4.TabIndex = 1;
+            this.pnl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
+            this.pnl4.Controls.Add(this.lblPayM);
+            this.pnl4.Controls.Add(this.label4);
+            this.pnl4.Location = new System.Drawing.Point(12, 348);
+            this.pnl4.Name = "pnl4";
+            this.pnl4.Size = new System.Drawing.Size(209, 167);
+            this.pnl4.TabIndex = 1;
             // 
             // lblPayM
             // 
-            this.lblPayM.AutoSize = true;
             this.lblPayM.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPayM.ForeColor = System.Drawing.Color.White;
-            this.lblPayM.Location = new System.Drawing.Point(80, 85);
+            this.lblPayM.Location = new System.Drawing.Point(49, 90);
             this.lblPayM.Name = "lblPayM";
-            this.lblPayM.Size = new System.Drawing.Size(25, 30);
+            this.lblPayM.Size = new System.Drawing.Size(103, 44);
             this.lblPayM.TabIndex = 11;
-            this.lblPayM.Text = "0";
+            this.lblPayM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -249,26 +247,25 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Pay Per Month";
             // 
-            // panel6
+            // pnl6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
-            this.panel6.Controls.Add(this.lblHrsW);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(545, 348);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(209, 167);
-            this.panel6.TabIndex = 1;
+            this.pnl6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(20)))), ((int)(((byte)(140)))));
+            this.pnl6.Controls.Add(this.lblHrsW);
+            this.pnl6.Controls.Add(this.label6);
+            this.pnl6.Location = new System.Drawing.Point(545, 348);
+            this.pnl6.Name = "pnl6";
+            this.pnl6.Size = new System.Drawing.Size(209, 167);
+            this.pnl6.TabIndex = 1;
             // 
             // lblHrsW
             // 
-            this.lblHrsW.AutoSize = true;
             this.lblHrsW.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHrsW.ForeColor = System.Drawing.Color.White;
-            this.lblHrsW.Location = new System.Drawing.Point(79, 85);
+            this.lblHrsW.Location = new System.Drawing.Point(73, 90);
             this.lblHrsW.Name = "lblHrsW";
-            this.lblHrsW.Size = new System.Drawing.Size(25, 30);
+            this.lblHrsW.Size = new System.Drawing.Size(63, 44);
             this.lblHrsW.TabIndex = 11;
-            this.lblHrsW.Text = "0";
+            this.lblHrsW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -287,31 +284,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(14)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(766, 545);
-            this.Controls.Add(this.btnDelUser);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnFindUser);
+            this.Controls.Add(this.pnl3);
+            this.Controls.Add(this.pnl4);
+            this.Controls.Add(this.pnl6);
+            this.Controls.Add(this.pnl5);
+            this.Controls.Add(this.pnl2);
+            this.Controls.Add(this.pnl1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmUserInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUserData";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.pnl1.ResumeLayout(false);
+            this.pnl1.PerformLayout();
+            this.pnl2.ResumeLayout(false);
+            this.pnl2.PerformLayout();
+            this.pnl3.ResumeLayout(false);
+            this.pnl3.PerformLayout();
+            this.pnl5.ResumeLayout(false);
+            this.pnl5.PerformLayout();
+            this.pnl4.ResumeLayout(false);
+            this.pnl4.PerformLayout();
+            this.pnl6.ResumeLayout(false);
+            this.pnl6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,15 +316,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnDelUser;
+        private System.Windows.Forms.Panel pnl1;
+        private System.Windows.Forms.Button btnFindUser;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel pnl2;
+        private System.Windows.Forms.Panel pnl3;
+        private System.Windows.Forms.Panel pnl5;
+        private System.Windows.Forms.Panel pnl4;
+        private System.Windows.Forms.Panel pnl6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -337,8 +334,8 @@
         private System.Windows.Forms.Label lblFullname;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Label lblHrsW;
         private System.Windows.Forms.Label lblHrsM;
         private System.Windows.Forms.Label lblPayM;
-        private System.Windows.Forms.Label lblHrsW;
     }
 }

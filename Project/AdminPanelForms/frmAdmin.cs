@@ -24,6 +24,7 @@ namespace Project
             frmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
             this.pnlContent.Controls.Add(frmDashboard_Vrb);
             frmDashboard_Vrb.Show();
+            lbladminUsername.Text = Database.LoginUserName;
 
         }
 
@@ -62,7 +63,7 @@ namespace Project
 
         private void btnUserData_Click(object sender, EventArgs e)
         {
-            lblPageInfo.Text = "User Control";
+            lblPageInfo.Text = "User Data";
             this.pnlContent.Controls.Clear();
             frmUserInfo frmUsserData = new frmUserInfo() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             this.pnlContent.Controls.Add(frmUsserData);

@@ -28,17 +28,16 @@ namespace Project
             new frmRegister().Show();
             this.Hide();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(!(txtUsername.Text == "" && txtPassword.Text == ""))
+            if (!(txtUsername.Text == "" && txtPassword.Text == ""))
             {
-                if(Database.Login(txtUsername.Text, txtPassword.Text) == "admin")
+                if (Database.Login(txtUsername.Text, txtPassword.Text) == "admin")
                 {
                     new frmAdmin().Show();
                     this.Hide();
                 }
-                else if(Database.Login(txtUsername.Text, txtPassword.Text) == "user")
+                else if (Database.Login(txtUsername.Text, txtPassword.Text) == "user")
                 {
                     new frmUser().Show();
                     this.Hide();
@@ -50,9 +49,7 @@ namespace Project
                     txtUsername.Text = "";
                 }
             }
-            
         }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();

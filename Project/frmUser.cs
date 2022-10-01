@@ -17,6 +17,7 @@ namespace Project
         public frmUser()
         {
             InitializeComponent();
+            lblLogin.Text = $"You're now Logged in as {Database.LoginUserName}";
         }
 
         private void btnClose_Click(object sender, EventArgs e)
