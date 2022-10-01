@@ -16,5 +16,12 @@ namespace Project.AdminPanelForms
         {
             InitializeComponent();
         }
+
+        private void frmDashboard_Load(object sender, EventArgs e)
+        {
+            lblNumTusers.Text = Database.GetUserCount(Total: true);
+            lblNumAdmins.Text = Database.GetUserCount(Role: "admin");
+            lblNumOnlineUsers.Text = Database.GetUserCount();
+        }
     }
 }

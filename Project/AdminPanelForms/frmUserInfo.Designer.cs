@@ -72,11 +72,10 @@
             this.lblFullname.AutoSize = true;
             this.lblFullname.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFullname.ForeColor = System.Drawing.Color.White;
-            this.lblFullname.Location = new System.Drawing.Point(66, 98);
+            this.lblFullname.Location = new System.Drawing.Point(69, 98);
             this.lblFullname.Name = "lblFullname";
-            this.lblFullname.Size = new System.Drawing.Size(49, 30);
+            this.lblFullname.Size = new System.Drawing.Size(0, 30);
             this.lblFullname.TabIndex = 11;
-            this.lblFullname.Text = "999";
             // 
             // label1
             // 
@@ -139,11 +138,10 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(70, 98);
+            this.lblUsername.Location = new System.Drawing.Point(65, 98);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(49, 30);
+            this.lblUsername.Size = new System.Drawing.Size(0, 30);
             this.lblUsername.TabIndex = 11;
-            this.lblUsername.Text = "999";
             // 
             // label2
             // 
@@ -171,11 +169,10 @@
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(77, 98);
+            this.lblRole.Location = new System.Drawing.Point(66, 98);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(49, 30);
+            this.lblRole.Size = new System.Drawing.Size(0, 30);
             this.lblRole.TabIndex = 11;
-            this.lblRole.Text = "999";
             // 
             // label3
             // 
@@ -203,11 +200,11 @@
             this.lblHrsM.AutoSize = true;
             this.lblHrsM.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHrsM.ForeColor = System.Drawing.Color.White;
-            this.lblHrsM.Location = new System.Drawing.Point(70, 85);
+            this.lblHrsM.Location = new System.Drawing.Point(81, 85);
             this.lblHrsM.Name = "lblHrsM";
-            this.lblHrsM.Size = new System.Drawing.Size(49, 30);
+            this.lblHrsM.Size = new System.Drawing.Size(25, 30);
             this.lblHrsM.TabIndex = 11;
-            this.lblHrsM.Text = "999";
+            this.lblHrsM.Text = "0";
             // 
             // label5
             // 
@@ -235,11 +232,11 @@
             this.lblPayM.AutoSize = true;
             this.lblPayM.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPayM.ForeColor = System.Drawing.Color.White;
-            this.lblPayM.Location = new System.Drawing.Point(66, 85);
+            this.lblPayM.Location = new System.Drawing.Point(80, 85);
             this.lblPayM.Name = "lblPayM";
-            this.lblPayM.Size = new System.Drawing.Size(49, 30);
+            this.lblPayM.Size = new System.Drawing.Size(25, 30);
             this.lblPayM.TabIndex = 11;
-            this.lblPayM.Text = "999";
+            this.lblPayM.Text = "0";
             // 
             // label4
             // 
@@ -267,11 +264,11 @@
             this.lblHrsW.AutoSize = true;
             this.lblHrsW.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHrsW.ForeColor = System.Drawing.Color.White;
-            this.lblHrsW.Location = new System.Drawing.Point(77, 85);
+            this.lblHrsW.Location = new System.Drawing.Point(79, 85);
             this.lblHrsW.Name = "lblHrsW";
-            this.lblHrsW.Size = new System.Drawing.Size(49, 30);
+            this.lblHrsW.Size = new System.Drawing.Size(25, 30);
             this.lblHrsW.TabIndex = 11;
-            this.lblHrsW.Text = "999";
+            this.lblHrsW.Text = "0";
             // 
             // label6
             // 

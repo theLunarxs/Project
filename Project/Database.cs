@@ -70,7 +70,7 @@ namespace Project
                 LoginUserName = Username;
                 LoginTime = DateTime.Now;
                 return role == "admin" ? "admin" : "user";
-                
+
             }
             else
             {
@@ -114,7 +114,7 @@ namespace Project
                 {
                     case TypeCode.Int32:
                         {
-                           new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = {nValue} WHERE Username = '{Username}';", con).ExecuteNonQuery();
+                            new SQLiteCommand($"UPDATE {tbl_name} SET {columnName} = {nValue} WHERE Username = '{Username}';", con).ExecuteNonQuery();
                             break;
                         }
                     case TypeCode.String:
@@ -146,7 +146,7 @@ namespace Project
             UserInfo myUser = new UserInfo();
             OpenConnection();
             reader = new SQLiteCommand($"SELECT Fname, Lname, Username, Role, PayM, HrsM, HrsW FROM tbl_users WHERE Username ='{Username}';", con).ExecuteReader();
-            if(reader.Read())
+            if (reader.Read())
             {
                 myUser.Firstname = reader["Fname"].ToString().Trim();
                 myUser.Lastname = reader["Lname"].ToString().Trim();
@@ -158,6 +158,18 @@ namespace Project
             }
             CloseConnection();
             return myUser;
+        }
+        public static string GetUserCount(string Role = "user", bool Total = false, string tableName = "tbl_users")
+        {
+            OpenConnection();
+            string x;
+
+            if (!Total)
+                x = new SQLiteCommand($"SELECT COUNT(*) FROM {tableName} WHERE Role = '{Role}';", con).ExecuteScalar().ToString();
+            else
+                x = new SQLiteCommand($"SELECT COUNT(*) FROM {tableName};", con).ExecuteScalar().ToString();
+            CloseConnection();
+            return x;
         }
     }
 }

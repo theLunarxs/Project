@@ -128,32 +128,4 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="btnUserControl.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAA0hJREFUSEvN
-        l8tLVVEUxqXMTCkw0CASSigdFE4jelnNtEk46TGIaNILw0ZOGkmBWv0LBtmkggbZOyxr0KCRA6GioBr1
-        HhS9y37f8TtX993n3BQL+uCHd31rnXvu2Wc/lmX/vcbGxiqhDXrhDNw2+twDrVDp8pmLL1sGp+EjvIML
-        cAqOGH2W9x4+QD8s9eXTFxfPhRPwFQZhM8xxOpJysAUuwxfQyFQ4PTVxQR3cg4ewwXZBePpRK6DeViD8
-        FngMd6HOdmlRuAiewHWosZ2IeA1cgZ+Q6iXsglkuS0S8EG6Cvqv0zSnQk+hJddNy24mIt8Fn0BA2QzXU
-        wm74BM+gxeWJiDX8N0BPnj/sJPVONbzFT6qbvIJ9tgLhz4Mu0ASstZ2IWE/+CHpthSLRAJpIWe90K7yF
-        2bYyRX4EDjgsCE/vXBMunu2YWjKXHAbCPwzDDnNFjdb0SYeB8DXb+x2OC0NDpWHaZCsQvtbrLYe5ouYi
-        dDsMhK+lpnU+sckQpEMZTKhU+Dth1GGuqLkPHQ4D4WuiaZNptZWYmqnnHEYitwp+QLWtSOQ0anqPq21F
-        IqcdrsdhYpyFPoeRyGmP1na5xFYkcvWuabMViZxWzYDDxBiCToeRyO2HEYe5ouYBZC45iZzmypDDxNAp
-        U+rG2h6/wVFbkZQDLcfltiKR64Tgxhrq7AVukd8BzyFay3jl8AK228oU+T4Ihrrk5JLIV4F2r4O2CpLn
-        XJWtTJGPJlc6eTKXUyry7fAdmmzJa7LXbitT5DOXk7qL3A0kFfkKkFbakqelJpU8e8nHG4iEoS1z0GGm
-        yNeA1GhLXuO4FR4sxSKv4zTcMiVMtTjaANbbCoSvo/AqjELh6fTZnnLNtgPh5x8SEgktcHUOya/n73zY
-        A8OgnUuTY3FSPEny4LxrVLsXFjinY1HNwMSkKhbJtBG4Bh2gmaoldAwaXJYrajRq3aCm4DXoVFNTUboR
-        kChQ6/MUfsEhKDnTs6RrfK2+48+tTyoKdXM9uX7AWttTFtes87VTb/ZScYGGXTuNJoXa242Q24Eo55q0
-        vVWTP732drK4eHJD/wY0ifTO9f7EcXs6z1Uzs4a+WHyZztv0X5gBuGP0Wd7f/Rfm36is7DcNOHJ/5Amt
-        GQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnDashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAJNJREFUSEvl
-        lFEKgCAQBT1edf8T1EFsq0E/ipdP6KMaWKjnqKCs6TvknKeoJeqKLR9RLbfAgGJGtdwCAxJUyy2QS1C/
-        scHjdzBGzXt4ZssH1MoxpkHtgzUkqH3EfKcPuhqt+Vzj279kBxaRoPbBGhLUSmTOY3cLaiWy5nPlX4Ja
-        IZeg/ngD5w78PojQaTT/sXspKa1cxfw9jRNxIwAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>
